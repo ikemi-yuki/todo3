@@ -1,0 +1,27 @@
+.header {
+    background: #000;
+}
+
+.header__inner {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header-nav__link {
+    text-decoration: none;
+    color: #fff;
+}
