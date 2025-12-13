@@ -16,12 +16,12 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/', [TodoController::class, 'index']);
-Route::get('/todos', [TodoController::class, 'store']);
-Route::get('/todos/update', [TodoController::class, 'update']);
-Route::get('/todos/delete', [TodoController::class, 'destroy']);
+Route::post('/todos', [TodoController::class, 'store']);
+Route::patch('/todos/update', [TodoController::class, 'update']);
+Route::delete('/todos/delete', [TodoController::class, 'destroy']);
 Route::get('/todos/search', [TodoController::class, 'search']);
 
 Route::get('/categories', [CategoryController::class, 'index']);
 Route::post('/categories', [CategoryController::class, 'store']);
-Route::get('/categories/update', [CategoryController::class, 'update']);
-Route::get('/categories/delete', [CategoryController::class, 'destroy']);
+Route::patch('/categories/update', [CategoryController::class, 'update']);
+Route::delete('/categories/delete', [CategoryController::class, 'destroy']);
